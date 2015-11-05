@@ -1,0 +1,63 @@
+===   typical_sinatra_reuest   =============================================================
+..#<Sinatra::Request:0x007f3a035cfde8 
+  @env={
+	"rack.version"=[1, 2], 
+	"rack.input"=#<StringIO:0x007f3a035d1eb8>, 
+	"rack.errors"=#<StringIO:0x007f3a035d1f58>, 
+	"rack.multithread"=true, 
+	"rack.multiprocess"=true, 
+	"rack.run_once"=false, 
+	"REQUEST_METHOD"="GET", 
+	"SERVER_NAME"="example.org", 
+	"SERVER_PORT"="80", 
+	"QUERY_STRING"="access_token=at123", 
+	"PATH_INFO"="/alt/stl/123", 
+	"rack.url_scheme"="http", 
+	"HTTPS"="off", 
+	"SCRIPT_NAME"="", 
+	"CONTENT_LENGTH"="0", 
+	"rack.test"=true, 
+	"REMOTE_ADDR"="127.0.0.1", 
+	"HTTP_HOST"="example.org", 
+	"HTTP_COOKIE"="", 
+	"newrelic.transaction_started"=true, 
+	"rack.logger" = #<
+	    Rack::NullLogger:0x007f3a03157680 
+		@app=#<
+		   App::Server:0x007f3a03207580	
+		   @default_layout=:layout,	
+		   @preferred_extension=nil, 		
+		   @app=nil, 		
+		   @template_cache=#<
+		       Tilt::Cache:0x007f3a03207558 	
+		       @cache={}
+		    >
+		>, 
+		@is_app=false, 
+		@category=:middleware, 
+		@target_class_name="Rack::PostBodyContentTypeParser", 
+		@transaction_name="Middleware/Rack/Rack::PostBodyContentTypeParser/call", 
+		@transaction_options={:transaction_name="Middleware/Rack/Rack::PostBodyContentTypeParser/call"}>, 
+		@options={
+			:reaction=:drop_session, 
+			:logging=true, 
+			:message="Forbidden", 
+			:encryptor=Digest::SHA1, 
+			:session_key="rack.session", 
+			:status=403, 
+			:allow_empty_referrer=true, 
+			:report_key="protection.failed", 
+			:html_types=["text/html", "application/xhtml"], 
+		    :xss_mode=:block, 
+		    :nosniff=true, 
+		    :except=[:session_hijacking, :remote_token]
+	    }
+	>, 
+	@is_app=false, 
+	"rack.request.query_string"="access_token=at123", 
+	"rack.request.query_hash"={"access_token"="at123"}, 
+	"newrelic.last_route"=/\A\/alt\/stl\/([^\/?#]+)\z/, 
+	"sinatra.route"="GET /alt/stl/:sha"}
+, 
+@params={"access_token"="at123"}>
+================================================================================
